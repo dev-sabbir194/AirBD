@@ -1,0 +1,255 @@
+/* Header section */
+.header {
+  width: 100%;
+  height: auto;
+}
+
+.center-content {
+  width: 610px;
+  height: auto;
+}
+
+.second-container {
+  padding-bottom: 20px;
+}
+
+.sizeing {
+  width: 100px;
+  height: 100px;
+}
+
+/* First Trial Button */
+#first-trial {
+  width: 100%;
+  margin-top: 15px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: linear-gradient(
+    90deg,
+    rgba(129, 230, 217, 1) 0%,
+    rgb(79, 133, 209) 100%
+  );
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: 12px 12px 24px rgba(133, 133, 133, 0.64);
+}
+
+#first-trial:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+#first-trial:active {
+  color: #000000;
+}
+
+#first-trial:active:after {
+  background: transparent;
+}
+
+#first-trial:hover:before {
+  opacity: 1;
+}
+
+#first-trial:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(129, 230, 217, 1) 0%,
+    rgb(79, 133, 209) 100%
+  );
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+/* More Service Button */
+#more-service {
+  width: 100%;
+  margin-top: 0px;
+  font-family: "Nunito", sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #313133;
+  background: #4fd1c5;
+  background: linear-gradient(
+    90deg,
+    rgba(129, 230, 217, 1) 0%,
+    rgb(79, 133, 209) 100%
+  );
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px rgba(133, 133, 133, 0.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+}
+
+#more-service::before {
+  content: "";
+  border-radius: 1000px;
+  min-width: calc(99% + 12px);
+  min-height: calc(30px + 12px);
+  border: 2px solid #00ffcb;
+  box-shadow: 0 0 60px rgba(0, 255, 203, 0.64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+#more-service:hover,
+#more-service:focus {
+  color: #313133;
+  transform: translateY(-6px);
+}
+
+#more-service:hover::before,
+#more-service:focus::before {
+  opacity: 1;
+}
+
+#more-service::after {
+  content: "";
+  width: au;
+  height: 30px;
+  border-radius: 100%;
+  border: 6px solid #00ffcb;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+
+#more-service:hover::after,
+#more-service:focus::after {
+  animation: none;
+  display: none;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
+
+#more-service:hover {
+  background-color: #eca817;
+}
+
+/* Card section */
+.col-style {
+  padding: 15px 20px;
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.card-1 {
+  background-color: #6ea969;
+}
+
+.card-2 {
+  background-color: #eca817;
+}
+
+.card-3 {
+  background-color: #3da2d8;
+}
+
+.card-4 {
+  background-color: #005374;
+}
+
+.service-img {
+  width: 96px;
+  height: 66px;
+}
+
+.company-text {
+  display: inline-block;
+  background-image: linear-gradient(to right, #1071c3 0%, #2bf39d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.fancy-heading {
+  font-size: 42px;
+  line-height: 42px;
+  font-weight: 700;
+  color: #26272c;
+}
+
+#get-start {
+  border-radius: 50px;
+  background-color: #005374;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  font-weight: 500;
+  font-size: 110%;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 22px;
+  padding-right: 22px;
+}
