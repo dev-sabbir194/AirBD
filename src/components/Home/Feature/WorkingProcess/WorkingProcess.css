@@ -1,0 +1,64 @@
+/* Text section */
+.text-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text-block {
+  flex: 1 0 30%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-image {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+
+.working-process .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  text-align: center;
+  padding: 10px;
+  width: 250px;
+  height: 250px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+/* Hover styles for working process text block */
+.working-process:hover .text {
+  color: aliceblue;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .text-block {
+    flex-basis: 100%;
+  }
+}
+
+/* Background image hover effect */
+.text-block:hover .bg-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, #1072c39c 0%, #478469c2 100%);
+  z-index: 1;
+  color: #ffffff;
+}
+
+/* Text hover effect */
+.text-block:hover .text {
+  z-index: 2;
+}
+
