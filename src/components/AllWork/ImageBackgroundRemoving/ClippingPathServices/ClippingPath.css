@@ -1,0 +1,31 @@
+.border-gradiant {
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #4ecdc4, #556270) 1;
+}
+
+.btn-style {
+  height: 38px;
+  border: none;
+  width: 100%;
+  border-radius: 50px;
+  background: linear-gradient(to right, #67e8b7, #55d9f0);
+}
+.btn-style:hover {
+  background: linear-gradient(to right, #0f9d66, #de55f0);
+}
+
+.all-work-bg {
+  background: linear-gradient(to right, #4ecdc4, #556270);
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .all-work-bg {
+    height: 700px;
+  }
+}
