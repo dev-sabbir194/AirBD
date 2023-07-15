@@ -1,0 +1,9 @@
+root{
+ max-width: 1920px;
+ overflow-y: scroll;
+ overflow-x: hidden;
+}
+body {
+  max-width: 1920px;
+  overflow-x: hidden;
+}

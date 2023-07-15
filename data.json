@@ -1,0 +1,186 @@
+ const cardData = [
+    {
+      id: 1,
+      feature: "Clipping Path Services",
+      featureColor: "#63B855",
+       image:"https://drive.google.com/uc?id=1YqMzjeMs9hDxbAG2Vc80aCRYcsZ0V1AB",
+        
+      sliderPositionPercentage: 0.5,
+      handleSize: 40,
+      handleColor: "#005FAC",
+      hover: true,
+      title: "0.20",
+      paragraphs: ["Basic Paths", "Simple Paths", "Complex Paths", "Super Complex Paths"],
+      price: ["0.49", "Simple Paths", "Complex Paths", "Super Complex Paths"],
+      buttons: ["Free Trial", "Get A Quote"],
+    },
+
+    {
+      id: 2,
+      feature: "Car Photo Editing Services",
+      featureColor: "#3DA2D8",
+       image:"https://drive.google.com/uc?id=1ScoEW6k7Am34xgZr2mX9kVxGJSn_pwEY ",
+      sliderPositionPercentage: 0.5,
+      handleSize: 40,
+      handleColor: "#005FAC",
+      hover: true,
+      title: "0.25",
+      paragraphs: ["Paragraph 1", "Paragraph 2", "Paragraph 3", "Paragraph 4"],
+      buttons: ["Free Trial", "Get A Quote"],
+    },
+    {
+      id: 3,
+      feature: "Ghost Mannequin Services ",
+      featureColor: "#F4C936",
+       image:"https://drive.google.com/uc?id=1yYKujAGBkXOSKh0gjjaxOeD6qI6vz9Kw ",
+       
+      sliderPositionPercentage: 0.5,
+      handleSize: 40,
+      handleColor: "#005FAC",
+      hover: true,
+      title: "0.99",
+      paragraphs: ["Paragraph 1", "Paragraph 2", "Paragraph 3", "Paragraph 4"],
+      buttons: ["Free Trial", "Get A Quote"],
+    },
+    {
+      id: 4,
+      feature: "Image Background Removal",
+      featureColor: "#6ca86a",
+       image:"https://drive.google.com/uc?id=1jUD2ZqmlHEuKnWw_W8E092ZNghDMzwUn ",
+      sliderPositionPercentage: 0.5,
+      handleSize: 40,
+      handleColor: "#005FAC",
+      hover: true,
+      title: "0.49",
+      paragraphs: ["Paragraph 1", "Paragraph 2", "Paragraph 3", "Paragraph 4"],
+      buttons: ["Free Trial", "Get A Quote"],
+    },
+    {
+      id: 5,
+      feature: "Clothing Photo Editing",
+      featureColor: "#6ca86a",
+       image:"https://drive.google.com/uc?id=1DwJN7QYBCS8h5E2JiVzhJbqZiPgoSmTn",
+       
+      
+       
+      sliderPositionPercentage: 0.5,
+      handleSize: 40,
+      handleColor: "#005FAC",
+      hover: true,
+      title: "0.99",
+      paragraphs: ["Paragraph 1", "Paragraph 2", "Paragraph 3", "Paragraph 4"],
+      buttons: ["Free Trial", "Get A Quote"],
+    },
+    {
+      id: 6,
+      feature: "Cosmetics Photo Editing",
+      featureColor: "#6ca86a",
+       image:" https://drive.google.com/uc?id=1yxrXAkuA7uju2FV-ZZMAYU-q9cnctYo4 ",
+       
+      
+       
+      sliderPositionPercentage: 0.5,
+      handleSize: 40,
+      handleColor: "#005FAC",
+      hover: true,
+      title: "0.99",
+      paragraphs: ["Paragraph 1", "Paragraph 2", "Paragraph 3", "Paragraph 4"],
+      buttons: ["Free Trial", "Get A Quote"],
+    },
+    {
+      id: 7,
+      feature: "Image Masking Services",
+      featureColor: "#6ca86a",
+       image:"https://drive.google.com/uc?id=1wBRzUGZrJ1p_T1rvosTlyXez-puLChWr",
+       
+      
+       
+      sliderPositionPercentage: 0.5,
+      handleSize: 40,
+      handleColor: "#005FAC",
+      hover: true,
+      title: "0.99",
+      paragraphs: ["Paragraph 1", "Paragraph 2", "Paragraph 3", "Paragraph 4"],
+      buttons: ["Free Trial", "Get A Quote"],
+    },
+    {
+      id: 8,
+      feature: "Image Restoration Services",
+      featureColor: "#6ca86a",
+       image:"https://drive.google.com/uc?id=1ecjyQnfqyzMcygnSKBbsMBaAX2wXSpvj",
+       
+      
+       
+      sliderPositionPercentage: 0.5,
+      handleSize: 40,
+      handleColor: "#005FAC",
+      hover: true,
+      title: "2.00-$1.99",
+      paragraphs: ["Paragraph 1", "Paragraph 2", "Paragraph 3", "Paragraph 4"],
+      buttons: ["Free Trial", "Get A Quote"],
+    },
+    {
+      id: 9,
+      feature: "Image Retouching Services",
+      featureColor: "#6ca86a",
+       image:"https://drive.google.com/uc?id=1Y9oVTIcgABVWh8OBBkNXDtpMiknAXXPW",
+       
+      
+       
+      sliderPositionPercentage: 0.5,
+      handleSize: 40,
+      handleColor: "#005FAC",
+      hover: true,
+      title: "0.99",
+      paragraphs: ["Paragraph 1", "Paragraph 2", "Paragraph 3", "Paragraph 4"],
+      buttons: ["Free Trial", "Get A Quote"],
+    },
+    {
+      id: 10,
+      feature: "Jewelry Photo Editing",
+      featureColor: "#6ca86a",
+       image:" https://drive.google.com/uc?id=19daqJljtDKvGV5ZnOwz-2U6IJboRbJRm ",
+       
+      
+       
+      sliderPositionPercentage: 0.5,
+      handleSize: 40,
+      handleColor: "#005FAC",
+      hover: true,
+      title: "1.00-$2.00",
+      paragraphs: ["Paragraph 1", "Paragraph 2", "Paragraph 3", "Paragraph 4"],
+      buttons: ["Free Trial", "Get A Quote"],
+    },
+    {
+      id: 11,
+      feature: "Photoshop Color Correction ",
+      featureColor: "#6ca86a",
+       image:"https://drive.google.com/uc?id=1e8C6_3WAvEySVM7Wp-m-TVRxpeVuKQwV",
+       
+      
+       
+      sliderPositionPercentage: 0.5,
+      handleSize: 40,
+      handleColor: "#005FAC",
+      hover: true,
+      title: "0.75",
+      paragraphs: ["Paragraph 1", "Paragraph 2", "Paragraph 3", "Paragraph 4"],
+      buttons: ["Free Trial", "Get A Quote"],
+    },
+
+    {
+      id: 12,
+      feature: "Shoe Photo Editing",
+      featureColor: "#6ca86a",
+       image:"https://drive.google.com/uc?id=1ncLgpyoYFW4vea5qesycJS3SaxyRdLCr",
+
+      sliderPositionPercentage: 0.5,
+      handleSize: 40,
+      handleColor: "#005FAC",
+      hover: true,
+      title: "0.49-$99",
+      paragraphs: ["Paragraph 1", "Paragraph 2", "Paragraph 3", "Paragraph 4"],
+      buttons: ["Free Trial", "Get A Quote"],
+    },
+  
+  ];

@@ -1,0 +1,8 @@
+html, body {
+  max-width: 1920px;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-y: scroll;
+}
