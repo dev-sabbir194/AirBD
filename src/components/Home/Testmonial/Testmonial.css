@@ -1,0 +1,36 @@
+/* Testimonial content */
+.testimonial-content {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial-img-container {
+  margin-right: 20px;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  /* Testimonial content on smaller screens */
+  .testimonial-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  /* Margin adjustment for testimonial image container on smaller screens */
+  .testimonial-img-container {
+    margin-bottom: 20px;
+  }
+}
+
+/* Testimonial description alignment */
+.testimonial-description {
+  text-align: justify;
+}
+
+/* Section title dots */
+.section-title-dots span {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  margin: 0 6px;
+}
